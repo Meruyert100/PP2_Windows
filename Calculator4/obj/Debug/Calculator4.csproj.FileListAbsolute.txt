@@ -1,0 +1,10 @@
+C:\Users\admin\Documents\Labs\Calculator4\bin\Debug\Calculator4.exe.config
+C:\Users\admin\Documents\Labs\Calculator4\bin\Debug\Calculator4.exe
+C:\Users\admin\Documents\Labs\Calculator4\bin\Debug\Calculator4.pdb
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.Form1.resources
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.Properties.Resources.resources
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.csproj.GenerateResource.cache
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.exe
+C:\Users\admin\Documents\Labs\Calculator4\obj\Debug\Calculator4.pdb

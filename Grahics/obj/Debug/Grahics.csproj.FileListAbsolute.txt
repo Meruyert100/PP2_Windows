@@ -1,0 +1,10 @@
+C:\Users\admin\Documents\Labs\Grahics\bin\Debug\Grahics.exe.config
+C:\Users\admin\Documents\Labs\Grahics\bin\Debug\Grahics.exe
+C:\Users\admin\Documents\Labs\Grahics\bin\Debug\Grahics.pdb
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.Form1.resources
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.Properties.Resources.resources
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.csproj.GenerateResource.cache
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.exe
+C:\Users\admin\Documents\Labs\Grahics\obj\Debug\Grahics.pdb
