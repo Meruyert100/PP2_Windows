@@ -116,6 +116,30 @@ namespace Calculator4
                     else
                         TextDisplay.Text = "-" + TextDisplay.Text;
                     break;
+                case "x³":
+                    TextDisplay.Text = (Math.Pow(result, 3)).ToString();
+                    break;
+                case "x^y":
+                    TextDisplay.Text = (Math.Pow(result, Double.Parse(TextDisplay.Text))).ToString();
+                    break;
+                case "p":
+                    double n = Double.Parse(TextDisplay.Text);
+                    double m = result;
+                    double tmp = 0;
+                    if (m < n)
+                    {
+                        tmp = m;
+                        m = n;
+                        n = tmp;
+                    }
+                    while (n != 0)
+                    {
+                        tmp = m % n;
+                        m = n;
+                        n = tmp;
+                    }
+                    TextDisplay.Text = m.ToString();
+                    break;
                 default:
                     break;
             }
@@ -146,12 +170,12 @@ namespace Calculator4
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            if (this.Width < 491 && tm == true)
+            if (this.Width < 615 && tm == true)
             {
-                while (!(this.Width == 491))
+                while (!(this.Width == 615))
                 {
                     this.Width += 1;
-                    if (this.Width == 491)
+                    if (this.Width == 615)
                     {
                         button24.Text = "<";
                         tm = false;
@@ -164,14 +188,14 @@ namespace Calculator4
             }
 
 
-            if (this.Width > 490 && tm == true)
+            if (this.Width > 614 && tm == true)
             {
-                while (!(this.Width == 310))
+                while (!(this.Width == 404))
                 {
 
                     this.Width -= 1;
 
-                    if (this.Width == 311)
+                    if (this.Width == 404)
                     {
                         button24.Text = ">";
                         tm = false;
@@ -184,6 +208,59 @@ namespace Calculator4
             }
         }
 
+        private void Button25_Click(object sender, EventArgs e)
+        {
+            TextDisplay.Text = (Fib(Int32.Parse(TextDisplay.Text))).ToString();
+        }
+
+        public static int Fib(int n)
+        {
+            if (n <= 1)
+            {
+                return n;
+            }
+            Task<int> task = Task.Factory.StartNew<int>(() => Fib(n - 1));
+            var p = Fib(n - 2);
+            return task.Result + p;
+        }
+
+        private void Button26_Click(object sender, EventArgs e)
+        {
+            string hexValue = TextDisplay.Text;
+            TextDisplay.Text = (Hex(hexValue)).ToString();
+        }
+
+        public static int Hex(string n)
+        {
+            int intAgain = int.Parse(n, System.Globalization.NumberStyles.HexNumber);
+            return intAgain;
+        }
+
+        private void Button27_Click(object sender, EventArgs e)
+        {
+            TextDisplay.Text = (Bin(Int32.Parse(TextDisplay.Text))).ToString();
+        }
+
+        public static string Bin(int n)
+        {
+            string binary = Convert.ToString(n, 2);
+            return binary;
+        }
+
+        private void Button30_Click(object sender, EventArgs e)
+        {
+            TextDisplay.Text = (Factorial(Int32.Parse(TextDisplay.Text))).ToString();
+        }
+
+        public double Factorial(int a)
+        {
+            double f = 1;
+
+            for (int i = 1; i <= a; i++)
+                f *= (double)i;
+
+            return f;
+        }
         private void Button7_Click(object sender, EventArgs e)
         {
             if(TextDisplay.Text.Length > 0)
